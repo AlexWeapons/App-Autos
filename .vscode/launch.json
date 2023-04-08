@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Application<org.aarmas.examen.marcas>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "org.aarmas.trnetwork.examen.marcas.Application",
+            "projectName": "org.aarmas.examen.marcas",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
