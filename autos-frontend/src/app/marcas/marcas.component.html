@@ -1,0 +1,10 @@
+<h1>Listado de marcas</h1>
+
+<div>
+    <ul *ngFor="let marca of marcas">
+        <li>{{marca.nombre}}</li>
+        <ul *ngFor="let submarca of marca.submarcas">
+            <li>{{submarca.nombre}}</li>
+        </ul>
+    </ul>
+</div>
