@@ -1,10 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Submarca } from './submarca';
+import { SubmarcaService } from './submarca.service';
 
 @Component({
   selector: 'app-submarcas',
-  templateUrl: './submarcas.component.html',
-  styleUrls: ['./submarcas.component.css']
+  templateUrl: './submarcas.component.html'
 })
-export class SubmarcasComponent {
+export class SubmarcasComponent implements OnInit{
+  submarcas: Submarca[];
 
+  constructor(private submarcaService: SubmarcaService) { }
+
+  ngOnInit() {
+      this.submarcaService.getSubmarcas().subscribe(
+        submarcas => this.submarcas = submarcas
+      );
+  }
 }

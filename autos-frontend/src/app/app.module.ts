@@ -12,6 +12,7 @@ import { MarcaService } from './marcas/marca.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ModelosComponent } from './modelos/modelos.component';
 import { DescripcionesComponent } from './descripciones/descripciones.component';
+import { SubmarcaService } from './submarcas/submarca.service';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { DescripcionesComponent } from './descripciones/descripciones.component'
     //RouterModule.forRoot(routes)
   ],
   providers: [
-    MarcaService
+    MarcaService,
+    SubmarcaService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Marca } from './marca'; 
-import { Submarca } from '../submarcas/submarca';
 import { MarcaService } from './marca.service';
 
 @Component({
@@ -8,7 +7,6 @@ import { MarcaService } from './marca.service';
   templateUrl: './marcas.component.html'
 })
 export class MarcasComponent implements OnInit{
-
   marcas: Marca[];
 
   constructor(private marcaService: MarcaService) { }

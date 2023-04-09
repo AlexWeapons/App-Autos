@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-modelos',
-  templateUrl: './modelos.component.html',
-  styleUrls: ['./modelos.component.css']
+  templateUrl: './modelos.component.html'
 })
 export class ModelosComponent {
 
