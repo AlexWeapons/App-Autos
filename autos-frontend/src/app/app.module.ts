@@ -8,13 +8,11 @@ import { DirectivaComponent } from './directiva/directiva.component';
 import { MarcasComponent } from './marcas/marcas.component';
 import { SubmarcasComponent } from './submarcas/submarcas.component';
 import { MarcaService } from './marcas/marca.service';
-import { RouterModule, Routes } from '@angular/router';
+//import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { ModelosComponent } from './modelos/modelos.component';
+import { DescripcionesComponent } from './descripciones/descripciones.component';
 
-const routes: Routes = [
-  {path: '', redirectTo: '/marcas', pathMatch: 'full'},
-  {path: 'marcas', component: MarcasComponent}
-]
 
 @NgModule({
   declarations: [
@@ -23,12 +21,14 @@ const routes: Routes = [
     FooterComponent,
     DirectivaComponent,
     MarcasComponent,
-    SubmarcasComponent
+    SubmarcasComponent,
+    ModelosComponent,
+    DescripcionesComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
-    RouterModule.forRoot(routes)
+    HttpClientModule
+    //RouterModule.forRoot(routes)
   ],
   providers: [
     MarcaService
