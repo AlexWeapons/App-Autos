@@ -8,6 +8,12 @@ import { DirectivaComponent } from './directiva/directiva.component';
 import { MarcasComponent } from './marcas/marcas.component';
 import { SubmarcasComponent } from './submarcas/submarcas.component';
 import { MarcaService } from './marcas/marca.service';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  {path: '', redirectTo: '/marcas', pathMatch: 'full'},
+  {path: 'marcas', component: MarcasComponent}
+]
 
 @NgModule({
   declarations: [
@@ -19,7 +25,8 @@ import { MarcaService } from './marcas/marca.service';
     SubmarcasComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [
     MarcaService
