@@ -9,6 +9,7 @@ import { MarcasComponent } from './marcas/marcas.component';
 import { SubmarcasComponent } from './submarcas/submarcas.component';
 import { MarcaService } from './marcas/marca.service';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   {path: '', redirectTo: '/marcas', pathMatch: 'full'},
@@ -26,6 +27,7 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(routes)
   ],
   providers: [
