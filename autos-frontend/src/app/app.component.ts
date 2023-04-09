@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Bienvenido a al mundo de los autos';
+  title = 'Bienvenido al mundo de los autos';
   autor = 'Alexis Armas';
 }
