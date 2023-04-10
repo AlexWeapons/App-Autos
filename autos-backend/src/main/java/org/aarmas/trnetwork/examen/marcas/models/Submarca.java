@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -36,7 +37,7 @@ public class Submarca implements Serializable{
 	@JsonIgnore
 	private Marca marca;
 	
-	@OneToMany(mappedBy = "submarca")
+	@OneToMany(mappedBy = "submarca", fetch = FetchType.LAZY)
 	private List<Modelo> modelos;
 
 	public Long getId() {
