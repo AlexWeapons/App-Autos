@@ -1,7 +1,5 @@
-<h1>Listado de submarcas</h1>
-
-<div>
-    <ul *ngFor="let submarca of submarcas">
-        <li>{{submarca.nombre}}</li>
-    </ul>
-</div>
+<h3>Submarca</h3>
+<select class="form-select" aria-label="Default select example">
+    <option selected>Serecciona una subarca</option>
+    <option *ngFor="let submarca of submarcas" value="submarca.id">{{ submarca.nombre }}</option>
+  </select>
