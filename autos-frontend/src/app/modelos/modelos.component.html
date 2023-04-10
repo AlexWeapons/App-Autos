@@ -1,1 +1,5 @@
-<p>modelos works!</p>
+<h3>Modelos</h3>
+<select class="form-select" aria-label="Default select example">
+    <option selected>Serecciona un modelo</option>
+    <option *ngFor="let modelo of modelos" value="modelo.id">{{ modelo.nombre }}</option>
+  </select>

@@ -1,1 +1,5 @@
-<p>descripciones works!</p>
+<h3>Listado de descripciones</h3>
+<select class="form-select" aria-label="Default select example">
+    <option selected>Serecciona una descripcion</option>
+    <option *ngFor="let descripcion of descripciones" value="descripcion.id">{{ descripcion.descripcion }}</option>
+  </select>

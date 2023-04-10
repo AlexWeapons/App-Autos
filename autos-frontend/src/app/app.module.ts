@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ModelosComponent } from './modelos/modelos.component';
 import { DescripcionesComponent } from './descripciones/descripciones.component';
 import { SubmarcaService } from './submarcas/submarca.service';
+import { ModeloService } from './modelos/modelo.service';
+import { DescripcionService } from './descripciones/descripcion.service';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { SubmarcaService } from './submarcas/submarca.service';
   ],
   providers: [
     MarcaService,
-    SubmarcaService
+    SubmarcaService,
+    ModeloService,
+    DescripcionService
   ],
   bootstrap: [AppComponent]
 })
